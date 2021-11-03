@@ -1,0 +1,12 @@
+1635762581723	geckodriver	INFO	Listening on 127.0.0.1:4738
+1635762584775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "4739" "-no-remote" "-profile" "C:\\Users\\CARREY~1\\AppData\\Local\\Temp\\rust_mozprofileI2gn0D"
+1635762585141	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CarreyLee\\AppData\\Local\\Temp\\rust_mozprofileI2gn0D\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:4739/devtools/browser/0b68cceb-ba7c-4c4b-91ff-a588f2d244ac
+1635762587606	Marionette	INFO	Listening on port 4745
+1635762587946	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1635762590159	Marionette	INFO	Stopped listening on port 4745
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 11060, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
