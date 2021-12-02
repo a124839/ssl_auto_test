@@ -23,6 +23,8 @@ REPORT_PATH = os.path.join(BASE_DIR,"reports")
 # resources path
 RESOURCE_PATH = os.path.join(BASE_DIR,"resource")
 
+IMAGE_PATH = os.path.join(BASE_DIR,"screenshot")
+
 
 if __name__ == '__main__':
     print(DRIVER_PATH)

@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>s01s02测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-11-02 15:40:50</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:06.564293</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-11-09 15:57:22</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:09.790608</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>用例情况</p>
@@ -245,20 +245,19 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "D:\Code\ssl_web_test\test\test.py", line 36, in testT2
-    self.driver.find_element(By.XPATH,"/html/body/div[1]/form/div/table/tbody/tr[2]/td/table[4]/tbody/tr/td/input").click()
-  File "D:\Code\ssl_web_test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1238, in find_element
-    return self.execute(Command.FIND_ELEMENT, {
+ft1.1:  aa  xpath /html/body/div[2]/div[2]/div/div[1]/div/a[2]/div 
+Traceback (most recent call last):
+  File "D:\Code\ssl_web_test\test\test.py", line 51, in testT2
+    info = self.driver.switch_to.alert
+  File "D:\Code\ssl_web_test\venv\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 56, in alert
+    alert.text
+  File "D:\Code\ssl_web_test\venv\lib\site-packages\selenium\webdriver\common\alert.py", line 66, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
   File "D:\Code\ssl_web_test\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 418, in execute
     self.error_handler.check_response(response)
   File "D:\Code\ssl_web_test\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/div[1]/form/div/table/tbody/tr[2]/td/table[4]/tbody/tr/td/input
-Stacktrace:
-WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:181:5
-NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:393:5
-element.find/&lt;/&lt;@chrome://remote/content/marionette/element.js:305:16
+selenium.common.exceptions.WebDriverException: Message: Failed to decode response from marionette
 
 
 

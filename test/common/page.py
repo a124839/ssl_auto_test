@@ -1,6 +1,6 @@
 import time
 from selenium.webdriver.common.action_chains import ActionChains
-from test.common.browser import Browser
+from test.common.Browser import Browser
 from utils.log import logger
 
 # 浏览器页面类，主要进行浏览器页面的控制，包括获取

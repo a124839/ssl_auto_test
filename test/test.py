@@ -31,8 +31,10 @@ class s02(unittest.TestCase):
         print("==2222exe==")
     '''
     def testT2(self):
+        a = (By.XPATH,"/html/body/div[2]/div[2]/div/div[1]/div/a[2]/div")
+        print(" aa  %s %s " %(a[0], a[1]))
         # 设备管理
-        self.driver.find_element(By.XPATH,"/html/body/div[2]/div[2]/div/div[1]/div/a[2]/div").click()
+        self.driver.find_element(a[0],a[1]).click()
         # 设备自检
         self.driver.find_element(By.XPATH,"/html/body/div[2]/div[2]/div/div[1]/div/ul[2]/li[1]/a").click()
         # 点击确定
@@ -45,7 +47,12 @@ class s02(unittest.TestCase):
         self.driver.find_element(By.CSS_SELECTOR,".button2").click()
         # 弹框
         self.driver.find_element(By.XPATH,"/html/body/div[2]/div[3]/a/span").click()
+        time.sleep(3)
+        info = self.driver.switch_to.alert
+        print(info.text)
+        info.dismiss()
         print("--设备自检--")
+        self.driver.quit()
 
     @classmethod
     def tearDownClass(cls) -> None:
